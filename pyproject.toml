@@ -1,0 +1,17 @@
+[project]
+name = "9router-account-exporter"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "cuwayo", email = "100044423+cuwayo@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+9router-account-exporter = "9router_account_exporter:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
