@@ -1,16 +1,23 @@
 [project]
 name = "9router-account-exporter"
 version = "0.1.0"
-description = "Add your description here"
+description = "Select and export provider accounts from a 9router backup"
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [
     { name = "cuwayo", email = "100044423+cuwayo@users.noreply.github.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "textual>=8.2.8",
+]
 
 [project.scripts]
-9router-account-exporter = "9router_account_exporter:main"
+9router-account-exporter = "router_account_exporter:main"
+
+[tool.uv.build-backend]
+module-name = "router_account_exporter"
 
 [build-system]
 requires = ["uv_build>=0.12.13,<0.13.0"]
